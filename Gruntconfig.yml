@@ -1,0 +1,8 @@
+scssDir: src/sass/
+jsSrcDir: src/js/
+
+cssDir: dist/css/
+jsConcatDir: dist/js/
+
+imgSrcDir: src/images/
+imgOptimizedDir: dist/images/
