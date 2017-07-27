@@ -2,50 +2,68 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>Michelle Levine Portfolio</title>
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Poiret+One|Quicksand" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans|Josefin+Slab" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <div class="container">
+  <div class="content-container">
 
     <header  class="header">
       <div class="header__logo">
-        <img src="images/logo-small.png" class="logo--small" />
+        <img src="images/logo-small.png" class="logo--small" alt="Michelle JL Logo"/>
       </div>
       <div class="header__title-block">
         <h1 class="title-block__title">Michelle Levine</h1>
-        <p class="title-block__subtitle">Front-End Ninja</p>
+        <h4 class="title-block__subtitle">Front-End Ninja</h4>
       </div>
     </header>
 
     <section class="main">
-      <img src="images/computer-hero.jpg" class="main__hero-image" />
+      <div class="main__hero-image">
+        <div class="hero__text-box">
+          <h2>About Me</h2>
+          <p class="hero__about-me">Hello World! I’m Michelle, a full stack web developer and software engineer currently in Portland, Oregon. Nothing excites me more than immersing myself in a good challenge or a great book. When not coding, I am most likely spending my time on some sort of creative project, getting involved in the local tech community, or exploring the world around me with my trusty Nikon camera.</p>
+        </div><!-- /.hero-image__text-box -->
+      </div><!-- /.main__hero-image -->
       <section class="main__featured-work">
         <h2 class="featured-work__title">Featured Work</h2>
-        <div class="row">
-          <article class="featured-work__project">
-            <img src="images/portfolio-small.png"  class="project__image" />
-            <h3 class="project__title">Main Portfolio Site</h3>
-            <a href="http://michellejl.com" target="_blank" class="project__link">michellejl.com</a>
-          </article>
-          <article class="featured-work__project">
-            <img src="images/simple-game-small.png" class="project__image" />
-            <h3 class="project__title">Simple JavaScript Game</h3>
-            <a href="https://codepen.io/michellejl/full/NxVOOw/" target="_blank" class="project__link">codepen.io/michellejl/full/NxVOOw/</a>
-          </article>
-          <article class="featured-work__project">
-            <img src="images/twa2ally-small.png" class="project__image" />
-            <h3 class="project__title">Travel Blog: The World According to Ally</h3>
-            <a href="http://theworldaccordingtoally.com" target="_blank" class="project__link">theworldaccordingtoally.com</a>
-          </article>
-        </div><!-- /.row -->
+
+        <div class="container grid-container">
+          <div class="row">
+            <article class="featured-work__project">
+              <img src="images/portfolio-small.png"  class="project__image" alt="Screenshot of the home page of my main portfolio site."/>
+              <h3 class="project__title">Main Portfolio Site</h3>
+              <a href="http://michellejl.com" target="_blank" class="project__link">michellejl.com</a>
+            </article>
+
+            <article class="featured-work__project">
+              <img src="images/simple-game-small.png" class="project__image" alt="Screenshot of a basic JavaScript game."/>
+              <h3 class="project__title">Simple JavaScript Game</h3>
+              <a href="https://codepen.io/michellejl/full/NxVOOw/" target="_blank" class="project__link">codepen.io/michellejl/full/NxVOOw</a>
+            </article>
+
+            <article class="featured-work__project">
+              <img src="images/twa2ally-small.png" class="project__image" alt="Screenshot of the home page of The World According to Ally: Travel Blog website"/>
+              <h3 class="project__title">Travel Blog: The World According to Ally</h3>
+              <a href="http://theworldaccordingtoally.com" target="_blank" class="project__link">theworldaccordingtoally.com</a>
+            </article>
+
+            <article class="featured-work__project">
+              <img src="images/gff-small.png" class="project__image" alt="Screenshot of the home page of the Girl Friend Factor website"/>
+              <h3 class="project__title">Girl Friend Factor</h3>
+              <a href="http://girlfriendfactor.org/" target="_blank" class="project__link">girlfriendfactor.org</a>
+            </article>
+
+          </div><!-- /.row -->
+        </div><!-- ./grid-container -->
       </section><!-- /.main__featured-work -->
     </section><!-- /.main -->
-
   </div><!-- /.container -->
 </body>
 </html>

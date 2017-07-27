@@ -1,7 +1,6 @@
 // Typography
-$accent-font: 'Poiret One', cursive;
+$accent-font: 'Josefin Slab', serif;
 $main-font: 'Josefin Sans', sans-serif;
-//font-family: 'Quicksand', sans-serif;
 
 // Colors
 $dark-gray: #2f2f2f;
@@ -10,7 +9,6 @@ $blue: #4076b6;
 
 $bg-color: $dark-gray;
 $font-color: $light-gray;
-$ehader-color: $blue;
 
 * {
   box-sizing: border-box;
@@ -20,13 +18,14 @@ html {
   background: $bg-color;
   color: $font-color;
   font-family: $main-font;
+  font-size: 18px;
 }
 
 img {
   width: 100%;
 }
 
-.container {
+.content-container {
   margin: 0 auto;
   max-width: 1100px;
   width: 100vw;
@@ -39,6 +38,16 @@ img {
   justify-content: space-between;
   margin-bottom: 40px;
   padding: 25px 10px 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $accent-font;
+}
+
+h1 { font-size: 1.75em; }
+
+@media screen and (min-width: 550px) {
+  h1 { font-size: 2.2em; }
 }
 
 .header__logo,
@@ -62,6 +71,28 @@ img {
   padding: 0;
 }
 
+.main__hero-image {
+  background-image: url(../images/computer-hero.jpg);
+  background-size: cover;
+  background-position: bottom right;
+  display: flex;
+  height: 40vh;
+  justify-content: center;
+  max-width: 1100px;
+  width: 100vw;
+}
+
+.hero__text-box {
+  background: rgba(255,255,255,0.8);
+  color: $dark-gray;
+  width: 90vw;
+  max-width: 500px;
+  padding: 10px 20px;
+  align-self: center;
+  max-height: 35vh;
+  overflow-y: auto;
+}
+
 .main__featured-work {
   padding: 0 0 50px;
 }
@@ -73,7 +104,6 @@ img {
 }
 
 .project__title {
-  margin-right: 15px;
   text-align: center;
 }
 

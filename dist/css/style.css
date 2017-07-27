@@ -4,12 +4,13 @@
 html {
   background: #2f2f2f;
   color: #e2e2e2;
-  font-family: "Josefin Sans", sans-serif; }
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 18px; }
 
 img {
   width: 100%; }
 
-.container {
+.content-container {
   margin: 0 auto;
   max-width: 1100px;
   width: 100vw; }
@@ -21,6 +22,16 @@ img {
   justify-content: space-between;
   margin-bottom: 40px;
   padding: 25px 10px 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Josefin Slab", serif; }
+
+h1 {
+  font-size: 1.75em; }
+
+@media screen and (min-width: 550px) {
+  h1 {
+    font-size: 2.2em; } }
 
 .header__logo,
 .header__title-block {
@@ -39,6 +50,26 @@ img {
   margin: 0;
   padding: 0; }
 
+.main__hero-image {
+  background-image: url(../images/computer-hero.jpg);
+  background-size: cover;
+  background-position: bottom right;
+  display: flex;
+  height: 40vh;
+  justify-content: center;
+  max-width: 1100px;
+  width: 100vw; }
+
+.hero__text-box {
+  background: rgba(255, 255, 255, 0.8);
+  color: #2f2f2f;
+  width: 90vw;
+  max-width: 500px;
+  padding: 10px 20px;
+  align-self: center;
+  max-height: 35vh;
+  overflow-y: auto; }
+
 .main__featured-work {
   padding: 0 0 50px; }
 
@@ -48,7 +79,6 @@ img {
   padding-left: 10px; }
 
 .project__title {
-  margin-right: 15px;
   text-align: center; }
 
 .project__link {
