@@ -28,7 +28,7 @@
       <div class="main__hero-image">
         <div class="hero__text-box">
           <h2>About Me</h2>
-          <p class="hero__about-me">Hello World! I’m Michelle, a full stack web developer and software engineer currently in Portland, Oregon. Nothing excites me more than immersing myself in a good challenge or a great book. When not coding, I am most likely spending my time on some sort of creative project, getting involved in the local tech community, or exploring the world around me with my trusty Nikon camera.</p>
+          <p class="hero__about-me">Hello World! I’m Michelle, a full stack web developer currently in Portland, Oregon. Nothing excites me more than immersing myself in a good challenge or a great book. When not coding, I am most likely spending my time on some sort of creative project, getting involved in the local tech community, or exploring the world around me with my trusty Nikon camera.</p>
         </div><!-- /.hero-image__text-box -->
       </div><!-- /.main__hero-image -->
       <section class="main__featured-work">
@@ -37,25 +37,49 @@
         <div class="container grid-container">
           <div class="row">
             <article class="featured-work__project">
-              <img src="images/portfolio-small.png"  class="project__image" alt="Screenshot of the home page of my main portfolio site."/>
+              <img srcset="
+                images/portfolio-small.png 400w,
+                images/portfolio-large.png 800w"
+                sizes="400px"
+                src="images/portfolio-small.png"
+                class="project__image"
+                alt="Screenshot of the home page of my main portfolio site." />
               <h3 class="project__title">Main Portfolio Site</h3>
               <a href="http://michellejl.com" target="_blank" class="project__link">michellejl.com</a>
             </article>
 
             <article class="featured-work__project">
-              <img src="images/simple-game-small.png" class="project__image" alt="Screenshot of a basic JavaScript game."/>
+              <img srcset="
+                images/simple-game-small.png 400w,
+                images/simple-game-large.png 800w"
+                sizes="400px"
+                src="images/simple-game-small.png"
+                class="project__image"
+                alt="Screenshot of a basic JavaScript Game" />
               <h3 class="project__title">Simple JavaScript Game</h3>
               <a href="https://codepen.io/michellejl/full/NxVOOw/" target="_blank" class="project__link">codepen.io/michellejl/full/NxVOOw</a>
             </article>
 
             <article class="featured-work__project">
-              <img src="images/twa2ally-small.png" class="project__image" alt="Screenshot of the home page of The World According to Ally: Travel Blog website"/>
+              <img srcset="
+                images/twa2ally-small.png 400w,
+                images/twa2ally-large.png 800w"
+                sizes="400px"
+                src="images/twa2ally-small.png"
+                class="project__image"
+                alt="Screenshot of the home page of The World According to Ally: Travel Blog website" />
               <h3 class="project__title">Travel Blog: The World According to Ally</h3>
               <a href="http://theworldaccordingtoally.com" target="_blank" class="project__link">theworldaccordingtoally.com</a>
             </article>
 
             <article class="featured-work__project">
-              <img src="images/gff-small.png" class="project__image" alt="Screenshot of the home page of the Girl Friend Factor website"/>
+              <img srcset="
+                images/gff-small.png 400w,
+                images/gff-large.png 800w"
+                sizes="400px"
+                src="images/gff-small.png"
+                class="project__image"
+                alt="Screenshot of the home page of the Girl Friend Factor website" />
               <h3 class="project__title">Girl Friend Factor</h3>
               <a href="http://girlfriendfactor.org/" target="_blank" class="project__link">girlfriendfactor.org</a>
             </article>
@@ -64,6 +88,10 @@
         </div><!-- ./grid-container -->
       </section><!-- /.main__featured-work -->
     </section><!-- /.main -->
+
+    <footer>
+      <p class="copyright">&copy; 2017 Michelle Levine</p>
+    </footer>
   </div><!-- /.container -->
 </body>
 </html>
